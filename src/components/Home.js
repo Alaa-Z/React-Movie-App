@@ -28,7 +28,7 @@ function Home () {
     const [filteredResults, setFilteredResults] = useState([]);
 
     // To post film
-    const API = 'http://localhost:5000/films';
+    const API = 'http://localhost:5000/films/';
 
     useEffect(() => {
         getData();

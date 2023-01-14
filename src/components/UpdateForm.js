@@ -105,7 +105,6 @@ const UpdateForm = () => {
             <input id="inputFile" name="filmImage" type="file"
             onChange={(e) =>setFilmImage(e.target.files[0]) }
             />
-            <span id="filename">filename</span> 
             <br></br>
             <div>
                 {" "}
