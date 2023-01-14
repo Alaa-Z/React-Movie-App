@@ -13,8 +13,6 @@ function App () {
       <div className='App'>
       <Routes>
         <Route path='/' exact element={<Home />} />
-        {/* <Route path='/add' exact element={<AddForm />} /> */}
-        {/* <Route path='/update' element={<UpdateForm />} /> */}
         <Route path=':id' exact element={<UpdateForm />} />
       </Routes>      
       </div>

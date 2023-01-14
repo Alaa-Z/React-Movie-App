@@ -1,12 +1,13 @@
 import React, {useState} from "react";
 import {Link}  from "react-router-dom";
-import MoreLessBtn from "./MoreLessBtn";
-
+// React icons 
 import { BsFillTrashFill } from "react-icons/bs";
 import { BsPencilFill} from "react-icons/bs";
 import { BsFillCaretDownFill} from "react-icons/bs";
-
 import { BsFillCaretUpFill} from "react-icons/bs";
+
+// Components  
+import MoreLessBtn from "./MoreLessBtn";
 
 const Film = ({title, filmLength, description, beenWatched, filmImage, _id, deleteFilm, onUpdateClick, oldFilm, action, text}) => {
     const API = 'http://localhost:5000/films';
@@ -14,7 +15,7 @@ const Film = ({title, filmLength, description, beenWatched, filmImage, _id, dele
     const [ openDetails, setOpenDetails] = useState(false); // to show more details with Initially false 
 
 
-    
+    // fetch the film information 
     const getDataById = () => {
         fetch(API+'/'+_id)
             .then((res) => res.json())

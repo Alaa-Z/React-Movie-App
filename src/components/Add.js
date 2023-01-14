@@ -3,7 +3,6 @@ import React, {useState}  from "react";
 
 const Add = ({errorTitle, errorDescription,errorLength, errorImage, onCreateFilm}) => {
    
-    
     // for check box
     const[isCkecked, setIsCkecked] = useState(false);
   

@@ -1,10 +1,14 @@
 import React, {useEffect, useState, Link} from 'react';
+
+import axios from 'axios';
+// React icons 
+import { BsSearch } from 'react-icons/bs';
+// Style 
+import "../App.css";
+// Components 
 import Film from "./Film";
 import Add from "./Add"
-import axios from 'axios';
 import PopUpMsg from "./PopUpMsg";
-import { BsSearch } from 'react-icons/bs';
-import "../App.css";
 
 
 function Home () {
