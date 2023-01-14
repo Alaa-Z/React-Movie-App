@@ -43,7 +43,7 @@ const Add = ({errorTitle, errorDescription,errorLength, errorImage, onCreateFilm
             <div>
                 {" "}
                 {errorLength && (
-                  <span style={{ color: "red" }}> Please provide a Length</span>
+                  <span style={{ color: "red" }}> Please provide a Duration</span>
                 )}{" "}
               </div>
             <br></br>
