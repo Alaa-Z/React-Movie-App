@@ -1,12 +1,17 @@
 # DT162G Project
 
-## REST-API With node.js, Express och mongoDB
+## Klient-app med React 
 
 Starta ny terminal i project directory och kör:
-### `npm run build`
+### `npm install`
 
 Starta frontend med ###
 ### `npm start`
+Öppna [http://localhost:3000](http://localhost:3000) för att visa den i din webbläsar
+
+### REACT app beskrivning 
+
+Uppgiften ingår i kursen ”Javascriptbaserad webbutveckling” och syftet ät att skapa SPA-klient-applikationen som kommer att hantera ett REST-webbtjänst(API)jag skapat tidigare med node.js, Express och mongoDB
 
 ### API beskrivning 
 
@@ -17,18 +22,6 @@ Webbtjänsten är för att hantera information om filmsamling och fälten för v
 * description: String,
 * filmLength: String,
 * filmImage : String
-
-Med Postman eller Thunder Client man kan testa API och CRUD-funktionalitet med nedstående:
-
-       
-| Domain | Method    | URI                   | BESKRIVNING  |
-| ------------|-----------|--------|--------| 
-|        | GET       | api/films             | Hämta ut all data från tabellen.                |
-|        | GET       | api/films/id          | Hämta ut en rad från tabellen med ett givet id. |
-|        | POST      | api/films             | Lägga till data till tabellen                   |
-|        | PUT       | api/films/ID          | Uppdatera data för en rad med ett givet id.     |      
-|        | DELETE    | api/films/ID          | Radera en rad i tabellen med ett givet id.      |
-
 
 
 ## Available Scripts

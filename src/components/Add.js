@@ -82,6 +82,12 @@ const Add = ({errorTitle, errorDescription,errorLength, errorImage, onCreateFilm
                         description,
                         filmImage
                     });
+                    setTitle("");
+                    setDescription("");
+                    setFilmLength("")
+                    setBeenWatched(false);
+                    setFilmImage("")
+                    document.querySelector(".filmImage").value="";
             }}
             >Add Film</button>
         </form>

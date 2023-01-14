@@ -32,7 +32,7 @@ const Film = ({title, filmLength, description, beenWatched, filmImage, _id, dele
     }
     
     return  (
-        <div className="filmCard">
+        <div className={`filmCard ${openDetails ? "filmCard-autoHeight" : ""} `}>
             <ul>
                 <li>
                     <div className="img-wrapper"> <img src={`http://localhost:5000/${filmImage}`} alt="" width="200" height=""/></div>
@@ -41,10 +41,10 @@ const Film = ({title, filmLength, description, beenWatched, filmImage, _id, dele
             </ul>
             
             <div className="details">
-                 <MoreLessBtn 
-                 action={() => {
-                 setOpenDetails(!openDetails)
-                 } }
+                <MoreLessBtn 
+                action={() => {
+                setOpenDetails(!openDetails)
+                } }
                  text = {openDetails === false  ? (<BsFillCaretDownFill/>) :  (<BsFillCaretUpFill/>)}
              />
             </div>

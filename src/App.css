@@ -186,12 +186,20 @@ textarea{
   background-color: hsl(0, 0%, 16%);
   margin: 8px;
   width: 250px;
+  height: 400px;
+}
+/* to change the height of the card by click */
+.filmCard-autoHeight{
+  background-color: hsl(0, 0%, 16%);
+  margin: 8px;
+  width: 250px;
+  height: auto;
 }
 .filmCard ul{
   list-style: none;
   margin-bottom: 6px;
   padding-inline-start: 0;
-  width:  95%;
+  width:  98%;
 }
 .filmCard ul li{
   padding: 6px;
