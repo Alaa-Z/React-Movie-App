@@ -124,6 +124,7 @@ function Home () {
 return (
     <div className='App'>
         <div className='searchContainer'>
+            <label for="search" style={{ display: "none" }}>search</label>
             <input id="search"
             placeholder='Search for film....'
             onChange={(e) => searchItems(e.target.value)}

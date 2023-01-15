@@ -91,8 +91,8 @@ const UpdateForm = () => {
         </button>
         <form className="updateForm"> 
             <h1>Update Film</h1>
-            <label><b>Title:</b></label><br></br>
-            <input type="text" className="" defaultValue={title}
+            <label for="updatedTitle" ><b>Title:</b></label><br></br>
+            <input type="text" className="" defaultValue={title} id="updatedTitle"
                 onChange={(e) => {setTitle(e.target.value)  }}/>
             <br></br>
             <div>
@@ -101,8 +101,8 @@ const UpdateForm = () => {
                   <span style={{ color: "red" }}> Please provide a title</span>
                 )}{" "}
               </div>
-            <label><b>Image:</b></label><br></br>
-            <input id="inputFile" name="filmImage" type="file"
+            <label for="inputFileUpdate"><b>Image:</b></label><br></br>
+            <input id="inputFileUpdate" name="filmImage" type="file"
             onChange={(e) =>setFilmImage(e.target.files[0]) }
             />
             <br></br>
@@ -112,8 +112,8 @@ const UpdateForm = () => {
                   <span style={{ color: "red" }}> Please provide a image</span>
                 )}{" "}
             </div>
-            <label><b>Duration</b></label><br></br>
-            <input type="text" className="" defaultValue={filmLength}
+            <label for="durationUpdated"><b>Duration</b></label><br></br>
+            <input type="text"  defaultValue={filmLength} id="durationUpdated"
                 onChange={(e) => { setFilmLength(e.target.value) }}/>
             <br></br>
             <div>
@@ -122,9 +122,10 @@ const UpdateForm = () => {
                   <span style={{ color: "red" }}> Please provide a duration </span>
                 )}{" "}
               </div>
-            <label> <b>Did you watch the movie:</b></label><br></br>
+            <label for="beenWatchedUpdated"> <b>Did you watch the movie:</b></label><br></br>
             <div>
                 <input type="checkbox"
+                id="beenWatchedUpdated"
                 defaultChecked={beenWatched}
                 onClick={(e) => {
                   setBeenWatched((prevState) => !prevState)
@@ -132,8 +133,8 @@ const UpdateForm = () => {
                  /> 
             </div>
             <br></br>
-            <label><b>Description:</b></label><br></br>
-             <textarea id="filmDescription" value={description} required
+            <label for="filmDescriptionUpdated"><b>Description:</b></label><br></br>
+             <textarea id="filmDescriptionUpdated" value={description} required
               onChange={(e) => {setDescription(e.target.value) }}>Description</textarea>
              <div>
                 {" "}

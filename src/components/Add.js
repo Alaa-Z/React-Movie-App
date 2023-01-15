@@ -16,8 +16,8 @@ const Add = ({errorTitle, errorDescription,errorLength, errorImage, onCreateFilm
     return(
         <form className="addForm"> 
         <h1> Add Film:  </h1>
-            <label>Title:</label><br></br>
-            <input type="text" className="filmTitle" value={title}
+            <label for="title">Title:</label><br></br>
+            <input type="text" className="filmTitle" id="title" value={title}
                 onChange={(e) => { setTitle(e.target.value) }}/>
             <br></br>
             <div>
@@ -26,7 +26,7 @@ const Add = ({errorTitle, errorDescription,errorLength, errorImage, onCreateFilm
                   <span style={{ color: "red" }}> Please provide a title</span>
                 )}{" "}
               </div>
-            <label>Image:</label><br></br>
+            <label for="inputFile">Image:</label><br></br>
             <input id="inputFile" name="filmImage" className="filmImage" type="file" onChange={(e) =>setFilmImage(e.target.files[0])} />
             <br></br>
             <div>
@@ -35,8 +35,8 @@ const Add = ({errorTitle, errorDescription,errorLength, errorImage, onCreateFilm
                   <span style={{ color: "red" }}> Please provide a image</span>
                 )}{" "}
               </div>
-            <label>Duration:</label><br></br>
-            <input type="text" className="filmLength" value={filmLength}
+            <label for="duration">Duration:</label><br></br>
+            <input type="text" className="filmLength" id="duration" value={filmLength}
                 onChange={(e) => {setFilmLength(e.target.value)}}
             />
             <div>
@@ -46,10 +46,11 @@ const Add = ({errorTitle, errorDescription,errorLength, errorImage, onCreateFilm
                 )}{" "}
               </div>
             <br></br>
-            <label>Did you watch the movie:</label><br></br>
+            <label for="beenWatched">Did you watch the movie:</label><br></br>
             <div>
                 <input type="checkbox"
                     className="filmBennWatched"
+                    id="beenWatched"
                     checked= {beenWatched}
                     onChange={(e) => {
                         setBeenWatched((prevState) => !prevState)
@@ -61,8 +62,8 @@ const Add = ({errorTitle, errorDescription,errorLength, errorImage, onCreateFilm
             </div>
         
             <br></br>
-            <label>Description:</label><br></br>
-            <textarea id="filmDescription" value={description}
+            <label for="filmDescription">Description:</label><br></br>
+            <textarea id="filmDescription" value={description} 
             onChange={(e) => {setDescription(e.target.value) }}>Description</textarea>
              <div>
                 {" "}
